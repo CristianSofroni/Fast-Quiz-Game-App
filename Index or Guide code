@@ -1,0 +1,33 @@
+"use strict";
+
+const app = document.getElementById("quiz-app");
+const quizCard = document.getElementById("quiz-details");
+const questionsCard = document.getElementById("questions-card");
+const resultCard = document.getElementById("result-card");
+
+class Quiz {
+  // Define the Quiz class (assuming it's correctly defined)
+}
+
+class QuizElementsHelper {
+  // Define the QuizElementsHelper class (assuming it's correctly defined)
+}
+
+function initApp() {
+  const questions = [
+    // ... (rest of the questions)
+  ];
+
+  const quiz = new Quiz(
+    "Simple JavaScript Quiz",
+    `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.`,
+    70,
+    questions
+  );
+
+  // questions.map(q => quiz.addQuestion(q.title, q.options));
+
+  new QuizElementsHelper(app, quizCard, questionsCard, resultCard, quiz);
+}
+
+initApp();
